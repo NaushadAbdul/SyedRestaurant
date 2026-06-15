@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-sans: "Inter", sans-serif;
+
+  --color-gold: #D4AF37;
+  --color-maroon: #6B0F1A;
+  --color-orange-accent: #FF7A00;
+  --color-charcoal: #0F0F0F;
+  --color-surface-gray: #1A1A1A;
+  --color-off-white: #F5F5F5;
+}
+
+/* Custom global styles for luxury aesthetic */
+html {
+  scroll-behavior: smooth;
+  background-color: #0F0F0F;
+  color: #F5F5F5;
+}
+
+body {
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Luxury premium scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F0F0F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6B0F1A;
+  border: 2px solid #0F0F0F;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Custom text selection */
+::selection {
+  background-color: #D4AF37;
+  color: #0F0F0F;
+}
+
+/* Elegant radial gradients */
+.bg-radial-luxury {
+  background: radial-gradient(circle at 50% 50%, rgba(107, 15, 26, 0.15) 0%, rgba(15, 15, 15, 0) 75%);
+}
+
+.bg-radial-gold-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.08) 0%, rgba(15, 15, 15, 0) 60%);
+}
+
+/* Sleek Interface design custom utilities */
+.text-glow-gradient {
+  background: linear-gradient(to bottom, #F5F5F5 20%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-glass-pill {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.border-glow-premium {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.border-glow-premium:hover {
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+/* Soft golden card reflection glow */
+.card-glow:hover {
+  box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.25);
+  border-color: rgba(212, 175, 55, 0.4);
+}
+
+/* Button hover glow */
+.btn-glow-gold:hover {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+.btn-glow-maroon:hover {
+  box-shadow: 0 0 20px rgba(107, 15, 26, 0.4);
+}
+
